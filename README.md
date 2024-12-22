@@ -5,13 +5,14 @@ Tarefas Calendar
 Este é um Calendário de Tarefas simples desenvolvido com HTML, CSS e JavaScript. O objetivo deste projeto é fornecer uma interface fácil e intuitiva para organizar e gerenciar tarefas diárias.
 Funcionalidades
 
-    Visualização do calendário mensal
-    Adição de tarefas para cada dia
-    Edição e exclusão de tarefas
-    Armazenamento local para persistir dados
+    
+° Visualização do calendário mensal
+° Adição de tarefas para cadqa dia
+° Edição e exclusão de tarefas
+° Armazenamento local para persistir dados
 
 Tecnologias Utilizadas
 
-    HTML: Estrutura da página
-    CSS: Estilização e layout responsivo
-    JavaScript: Lógica para adicionar, editar e excluir tarefas, além de manipulação de armazenamento local
+-> HTML: Estrutura da página
+-> CSS: Estilização e layout responsivo
+-> JavaScript: Lógica para adicionar, editar e excluir tarefas, além de manipulação de armazenamento local
