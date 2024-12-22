@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendário e Lista de Tarefas - 2025</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Calendário e Lista de Tarefas - 2025</h1>
+    <div class="month-navigation">
+      <button onclick="previousMonth()">Anterior</button>
+      <h2 id="current-month">Janeiro</h2>
+      <button onclick="nextMonth()">Próximo</button>
+    </div>
+    <div class="day-names">
+      <div>Dom</div>
+      <div>Seg</div>
+      <div>Ter</div>
+      <div>Qua</div>
+      <div>Qui</div>
+      <div>Sex</div>
+      <div>Sáb</div>
+    </div>
+    <div id="calendar" class="calendar"></div>
+
+    <div class="task-list">
+      <h2>Tarefas para <span id="selected-date">Selecionar uma data</span></h2>
+      <input type="text" id="task-input" placeholder="Digite uma tarefa">
+      <button onclick="addTask()">Adicionar</button>
+      <button onclick="exportToExcel()">Exportar para Excel</button>
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>

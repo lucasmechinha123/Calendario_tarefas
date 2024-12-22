@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #8080e433;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: rgb(255, 249, 249);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  background-color: #5871e0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.month {
+  margin-bottom: 20px;
+}
+
+.month h2 {
+  text-align: center;
+  background: #4caf50;
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.day {
+  padding: 10px;
+  text-align: center;
+  background: #e1e1e1;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.day:hover {
+  background: #d4d4d4;
+}
+
+.day.selected {
+  background: #4caf50;
+  color: white;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-list input {
+  width: 80%;
+  padding: 8px;
+  margin-right: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.task-list button {
+  padding: 8px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list ul li {
+  padding: 8px;
+  background: #f4f4f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list ul li span {
+  flex-grow: 1;
+}
+
+.task-list ul li button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-list ul li .complete {
+  background: #2ecc71;
+  color: white;
+}
+
+.task-list ul li .incomplete {
+  background: #e67e22;
+  color: white;
+}
+
+.task-list ul li .delete {
+  background: #e74c3c;
+  color: white;
+}
+
+.month-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.month-navigation button {
+  padding: 10px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
